@@ -1,6 +1,6 @@
 0. If you haven't, please install Github CLI ```winget install --id GitHub.cli```
 
-1. Create a repo and do a first empty commit main
+1. Create a repo and do a first empty commit to main or master
 2. Create a new local branch call 'experiment' by ```git checkout -b experiment```
 3. Create the following files:
 
@@ -111,6 +111,15 @@
         outfile.write(f'\nMean Absolute Error = {mae_1}, Mean Squared Error = {mse_1}.')
 
     ```
+
+    And ```./requirements.txt```:
+
+    ```
+    tensorflow
+    numpy
+    matplotlib
+    ```
+
 
 4. Go into https://cml.dev/doc/start/github and copy the ```.github/workflows/cml.yaml``` file into a ```./.github/workflows/cml.yaml```:
 
