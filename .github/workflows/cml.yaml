@@ -14,8 +14,8 @@
           # env:
           # REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           # Steps to run in the container
+          # Add any needed steps for your project below
           run: |
-          ## Add any needed steps for your project
           pip install -r requirements.txt
           python train.py  # generate plot.png
 

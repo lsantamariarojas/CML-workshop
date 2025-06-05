@@ -136,12 +136,12 @@
         steps:
         - uses: actions/checkout@v3
         - name: Train model
-        # When needing to pass .env
+            # When needing to pass .env
             env:
             REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
             # Steps to run in the container
-            run: |
             ## Add any needed steps for your project
+            run: |
             pip install -r requirements.txt
             python train.py  # generate plot.png
 
