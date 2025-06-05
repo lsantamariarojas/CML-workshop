@@ -16,11 +16,11 @@
           # Steps to run in the container
           ## Add any needed steps for your project
           run: |
-          pip install -r requirements.txt
-          python main.py  # generate plot.png
+            pip install -r requirements.txt
+            python main.py  # generate plot.png
 
-          ### Automatic reporting set up
-          # Create CML report
-          cat metrics.txt >> report.md
-          echo '![](./model_results.png "Confusion Matrix")' >> report.md
-          cml comment create report.md
+            ### Automatic reporting set up
+            # Create CML report
+            cat metrics.txt >> report.md
+            echo '![](./model_results.png "Confusion Matrix")' >> report.md
+            cml comment create report.md
